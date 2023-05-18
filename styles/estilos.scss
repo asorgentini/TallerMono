@@ -85,7 +85,7 @@ font-family: 'Open Sans', sans-serif;*/
     color: #fff;
     width: 85%;
     height: 85%;
-    font-size: 200%;
+    font-size: 300%;
     padding-top: 40%;
     padding-bottom: 40%;
     background-color:papayawhip;
@@ -99,13 +99,16 @@ font-family: 'Open Sans', sans-serif;*/
     align-items: center;
     justify-content: center;
     border-radius: 10%;
+    h2{
+        font-size: 100%;
+    }
 }
 .eshop{
     display: flex;
     color: #fff;
     width: 85%;
     height: 85%;
-    font-size: 200%;
+    font-size: 300%;
     padding-top: 40%;
     padding-bottom: 40%;
     background-color:papayawhip;
@@ -119,6 +122,9 @@ font-family: 'Open Sans', sans-serif;*/
     align-items: center;
     justify-content: center;
     border-radius: 10%;
+    h2{
+        font-size: 100%;
+    }
 }
 .aprende_eshop_txt{
     display:flex;
@@ -402,6 +408,8 @@ font-family: 'Open Sans', sans-serif;*/
     img{
         width: 80%;
         border-radius: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 }
 
@@ -430,6 +438,7 @@ font-family: 'Open Sans', sans-serif;*/
 .ubicacion{
     width: 54%;
     text-align: center;
+    margin-top: 5%;
 }
 
 .googleMaps{
@@ -437,6 +446,7 @@ font-family: 'Open Sans', sans-serif;*/
     display: flex;
     justify-content: center;
     iframe{
+        margin-top: 5%;
         width: 60%;
         border-radius: 20px;
     }
@@ -453,6 +463,15 @@ font-family: 'Open Sans', sans-serif;*/
     a{
         text-decoration: none;
         color: black;
+    }
+}
+
+$base-color: rgb(191, 140, 45);
+
+@for $in from 1 through 5 {
+    .clase-#{$in} {
+        background-color: lighten($base-color, $in * 10%);
+        // background-color: darken($base-color, $in * 10%);
     }
 }
 
@@ -499,9 +518,13 @@ font-family: 'Open Sans', sans-serif;*/
         justify-content: left;
         /* background-color: yellow; */
     }
-    .requerimientos ul{
-        background-color: papayawhip;
-        border-radius: 15px;
+    .requerimientos{
+        padding-top: 5%;
+
+        ul{
+            background-color: papayawhip;
+            border-radius: 15px;
+        }
     }
 }
 @media only screen and (min-width: 1100px){
@@ -542,10 +565,12 @@ font-family: 'Open Sans', sans-serif;*/
     display: flex;
     justify-content: center;
     width: 100%;
+    align-items: center;
+    padding-bottom: 5%;
     input{
         border-radius: 8px;
         width: 70%;
-        height: 200%;
+        height: 110%;
     }
 }
 
@@ -560,7 +585,7 @@ font-family: 'Open Sans', sans-serif;*/
 }
 
 #mensaje{
-    min-height: 200px;
+    min-height: 100px;
     display: flex;
     align-items:baseline;
 }
@@ -577,9 +602,10 @@ font-family: 'Open Sans', sans-serif;*/
         display: flex;
         align-items: center;
         justify-content: left;
-
+        padding-bottom: 0%;
         input{
-            height: 20%;
+            height: 50%;
+            padding-left: 2%;
         }
     }
 
@@ -588,9 +614,17 @@ font-family: 'Open Sans', sans-serif;*/
         justify-content: end;
         padding-bottom: 6.5%;
         padding-right: 10%;
-
     }
+    
 
+}
+$base-color: rgb(191, 140, 45);
+
+@for $in from 1 through 5 {
+    .bucle-#{$in} {
+        background-color: lighten($base-color, $in * 10%);
+        // background-color: darken($base-color, $in * 10%);
+    }
 }
 
 // main quienes somos
@@ -625,13 +659,23 @@ font-family: 'Open Sans', sans-serif;*/
     width: 100%;
     padding-bottom: 10%;
     img{
-        max-height: 200px;
+        width: 80%;
         border-radius: 10px;
+        margin-top: 10%;
     }
 }
 
 .soda{
     min-height: 250px;
+}
+
+$base-color: rgb(191, 140, 45);
+
+@for $in from 1 through 5 {
+    .nos-#{$in} {
+        background-color: lighten($base-color, $in * 10%);
+        // background-color: darken($base-color, $in * 10%);
+    }
 }
 
 @media only screen and (min-width: 800px){
@@ -755,3 +799,8 @@ font-family: 'Open Sans', sans-serif;*/
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+
